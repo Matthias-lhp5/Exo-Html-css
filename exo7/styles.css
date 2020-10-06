@@ -1,0 +1,21 @@
+#identite, #identite legend
+{
+    background-color: blue;
+}
+
+#adresse, #adresse legend
+{
+    background-color: violet;
+}
+
+#bancaire, #bancaire legend
+{
+    background-color: pink;
+}
+
+li, fieldset
+{
+    margin: 5px;
+}
+
+
