@@ -1,26 +1,47 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Les tableaux</title>
+
+    <style>
+    
+        tfoot{
+            text-align: center;
+            background-color: black;
+            color: white;
+        }
+        td, th{
+            border: 1px solid black;
+        }
+        table{
+            border-collapse: collapse;
+        }
+    
+    </style>
 </head>
 
-<style>
-thead{font-weight: bold;}
-table{font-size: 105%;}
 
-</style>
 
-<body class="test">
-    <table border="1"cellspacing="0">
+<body>
+    <table>
         <caption>Mon compte BNP</caption>
         <thead>
-            <td>Date</td>
-            <td>Libellé</td>
-            <td>Crédit</td>
-            <td>Débit</td>
+            <tr>
+                <th>Date</th>
+                <th>Libellé</th>
+                <th>Crédit</th>
+                <th>Débit</th>
+            </tr>
         </thead>
+        <tfoot>
+            <tr>
+                <td colspan="2">Solde</td>
+                <td colspan="2">575.40</td>
+            </tr>
+        </tfoot>
         <tbody>
             <tr>
                 <td>01/05/2016</td>
@@ -53,10 +74,8 @@ table{font-size: 105%;}
                 <td>39.90</td>
             </tr>
         </tbody>
-        <tfoot>
-            <td colspan="2" align="center">Solde</td>
-            <td colspan="2" align="center">575.40</td>
-        </tfoot>
+
     </table>
 </body>
+
 </html>
